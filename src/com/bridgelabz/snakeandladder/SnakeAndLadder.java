@@ -1,7 +1,16 @@
 package com.bridgelabz.snakeandladder;
 
 public class SnakeAndLadder {
+    int StartPosition=0;
+
+    public void showPosition(){
+        System.out.println("Initial position of player = "+StartPosition);
+
+    }
+
     public static void main(String[] args) {
-        System.out.println("Snake And Ladder Program");
+        SnakeAndLadder P1 = new SnakeAndLadder();
+
+        P1.showPosition();
     }
 }
