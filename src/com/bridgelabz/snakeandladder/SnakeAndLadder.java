@@ -7,6 +7,7 @@ public class SnakeAndLadder {
     public static final int IS_SNAKE = 2;
     int playerPosition = 0;
     int newPosition = 0;
+    int diceCount = 0;
 
     Random randomNum = new Random();
 
@@ -22,6 +23,8 @@ public class SnakeAndLadder {
 
     public int rollDie() {
         int dieNo = randomNum.nextInt(6) + 1;
+        diceCount++;
+        System.out.println("Dice Count : "+diceCount);
         return dieNo;
     }
 
